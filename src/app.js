@@ -17,7 +17,7 @@ app.use((req, res, next) => {
   next();
 });
 
-//// connectDB();
+connectDB();
 
 app.use("/api/products", productsRoutes);
 app.use("/api/carts", cartsRoutes);
